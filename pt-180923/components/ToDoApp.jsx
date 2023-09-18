@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import ToDoList from './ToDoList'
 
 const ToDoApp = () => {
 
@@ -20,9 +21,9 @@ const ToDoApp = () => {
 
   return (
     <>
-    <div>ToDoApp</div>
     <input type='text' onChange={(e)=>{setInputUIserData(e.target.value)}} value={inputUserData}></input>
     <button onClick={handleAddTask}>Send</button>
+    <ToDoList taskList={taskList}></ToDoList>
     </>
   )
 }
