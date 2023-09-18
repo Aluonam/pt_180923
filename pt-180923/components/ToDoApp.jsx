@@ -23,7 +23,7 @@ const ToDoApp = () => {
     <>
     <input type='text' onChange={(e)=>{setInputUIserData(e.target.value)}} value={inputUserData}></input>
     <button onClick={handleAddTask}>Send</button>
-    <ToDoList taskList={taskList}></ToDoList>
+    <ToDoList taskList={taskList} setTaskList={setTaskList}></ToDoList>
     </>
   )
 }
